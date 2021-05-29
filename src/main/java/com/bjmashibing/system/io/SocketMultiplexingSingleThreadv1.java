@@ -47,7 +47,7 @@ public class SocketMultiplexingSingleThreadv1 {
                 System.out.println(keys.size()+"   size");
                 /**
                  * 1.调用多路复用器（select ， poll or epoll （epoll_wait))
-                 * select 是啥意思：
+                 * selector 是啥意思：
                  * 1.select , poll 其实 内核的select（fd4） poll（fd4）
                  * 2.epoll : 其实内核的epoll_wait()
                  * 3.参数可以带时间：没有时间 0 阻塞，有时间设置一个超时
